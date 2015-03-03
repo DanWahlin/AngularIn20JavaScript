@@ -3,17 +3,17 @@
     var injectParams = [];
     var filterTextbox = function() {
 
-        var template = 'Search: <input type="text" ng-model="vm.filter" /> {{ vm.error }}',
+        var template = 'Search: <input type="text" ng-model="vm.filter" /> {{ vm.message }}',
             controller = function($scope) {
                 var vm = this;
-                vm.error = '';
+                vm.message = '';
 
                 $scope.$watch('vm.filter', function(val) {
                     if (val === '') {
-                        vm.error = 'Please enter a value';
+                        vm.message = 'Please enter a value';
                     }
                     else {
-                        vm.error = '';
+                        vm.message = '';
                     }
                 });
             }
