@@ -4,6 +4,7 @@
     var CustomersController = function(customersService) {
         var vm = this;
         vm.customers = null;
+        vm.filter = '';
 
         function init() {
             customersService.getCustomers()
