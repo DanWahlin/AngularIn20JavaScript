@@ -1,0 +1,24 @@
+{
+  "name": "angular-javascript-in20",
+  "version": "0.1.0",
+  "description": "AngularJS and JavaScript",
+  "contributors": [
+    {
+      "name": "Andrew Connell",
+      "email": "me@andrewconnell.com"
+    },
+    {
+      "name": "Dan Wahlin",
+      "email": "dwahlin@wahlinconsulting.com"
+    }
+  ],
+  "keywords": [
+    "angularjs",
+    "javascript"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "superstatic": "^2.0.2"
+  },
+  "devDependencies": {}
+}
