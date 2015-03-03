@@ -1,10 +1,10 @@
 (function() {
 
-    var injectParams = [];
     var filterTextbox = function() {
 
         var template = 'Search: <input type="text" ng-model="vm.filter" /> {{ vm.message }}',
-            controller = function($scope) {
+
+            controller = ['$scope', function($scope) {
                 var vm = this;
                 vm.message = '';
 
@@ -16,7 +16,7 @@
                         vm.message = '';
                     }
                 });
-            }
+            }];
 
         return {
             restrict: 'E',
