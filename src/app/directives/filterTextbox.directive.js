@@ -8,8 +8,8 @@
                 var vm = this;
                 vm.message = '';
 
-                $scope.$watch('vm.filter', function(val) {
-                    if (val === '') {
+                $scope.$watch('vm.filter', function(newVal, oldVal) {
+                    if (oldVal !== '' && newVal === '') {
                         vm.message = 'Please enter a value';
                     }
                     else {
